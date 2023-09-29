@@ -28,3 +28,53 @@
 html::-webkit-scrollbar{
     width: 0.5rem;
 }
+html::-webkit-scrollbar-thumb {
+   background: transparent;
+}
+html::-webkit-scrollbar-track{
+    background: var(--text-color);
+    border-radius: 5rem;
+}
+img{
+    width: 100%;
+}
+section{
+    padding: 50px 100px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: .5s linear;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    column-gap: .2rem;
+    color: var(--text-color);
+}
+.logo .bx{
+    font-size: 24px;
+    color: var(--main-color);
+
+}
+.navbar{
+    display: flex;
+    column-gap: 2.4rem;
+}
+.navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.navbar a:hover {
+    color: var(--main-color);
+}
