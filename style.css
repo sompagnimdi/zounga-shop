@@ -70,11 +70,36 @@ header{
     display: flex;
     column-gap: 2.4rem;
 }
-.navbar a {
+.navbar a{
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-color);
 }
 .navbar a:hover {
     color: var(--main-color);
+}
+.header-icons {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 100000;
+}
+#menu-icon {
+     display: none; 
+}
+.search-box{
+    position: absolute;
+    top: 110%;
+    right: -100%;
+}
+.search-box input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    width: 280px;
+    box-shadow: var(--box-shadow);
+}
+.search-box.active {
+    right: 1rem;
+    transition: .2s;
 }
