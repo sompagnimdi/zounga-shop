@@ -225,7 +225,7 @@ header{
     text-transform: capitalize;
     color: var(--text-color);
 }
-.eading span{
+.heading span{
     padding: 0.2rem 1.2rem;
     background: var(--main-color);
     color: var(--bg-color);
@@ -233,4 +233,34 @@ header{
     display: inline-block;
     text-transform: uppercase;
     clip-path: polygon(100% 0, 93% 50%, 86% 99%, 0% 100%, 7% 47%, 13% 0%);
+}
+.new-arrival{
+    margin-top: 2rem;
+}
+.new-arrival .box{
+    position: relative;
+    overflow: hidden;
+    background: var(--second-color);
+}
+.new-arrival .box img{
+    background: var(--second-color);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.new-arrival .box .content{
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(0, 0%, 91%, 0.5);
+    overflow: hidden;
+}
+.new-arrival .box:hover .content{
+    top: 0;
+    transition: 0.2s;
 }
