@@ -291,3 +291,17 @@ header{
     background: var(--main-color);
     color: var(--bg-color);
 }
+.product-container .box .bx-cart-alt:hover{
+    background: var(--text-color);
+}
+.product-container .box:hover img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transition: 0.5s;
+}
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
