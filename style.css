@@ -223,6 +223,9 @@ header{
     font-size: 3.4rem;
     margin-bottom: 1rem;
 }
+.heading{
+    text-align: center;
+}
 .heading h1{
     font-size: 1.7rem;
     font-weight: 600;
@@ -391,4 +394,36 @@ header{
     padding: 20px;
     text-align: center;
     color: var(--text-color);
+}
+
+/*  Making Responsive */
+
+
+
+@media (max-width: 991px) {
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        padding: 12px 4%;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        width: 240px;
+        height:100vh ;
+        top: 110%;
+    }
+   
 }
