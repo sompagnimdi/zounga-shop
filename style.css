@@ -422,9 +422,9 @@ header{
     header .navbar{
         position: absolute;
         width: 240px;
-        height:100vh ;
-        top: 110%;
-        right: 0;
+        height:110vh ;
+        top: 100%;
+        right: -100%;
         display: flex;
         flex-direction: column;
         background: var(--bg-color);
@@ -434,5 +434,26 @@ header{
         transition: 0.2s linear;
         text-align: left;
     }
+    .navbar.active{
+        right: 0;
+    }
+    .home-text h1{
+        font-size: 2rem;
+    }
    
+}
+
+@media (max-width: 360px){
+    .home-text span{
+        font-size: 0.8rem;
+    }
+    .home-text h1{
+        font-size: 1.7rem;
+    }
+    .cart img{
+        width: 77px;
+    }
+    .heading h1{
+        font-size: 1.4rem ;
+    }
 }
